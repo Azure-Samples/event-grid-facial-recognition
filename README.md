@@ -1,4 +1,6 @@
-# Project Name
+# Facial recognition with no code
+
+![Blob Storage](./media/blob.svg) ![Event Grid](./media/event-grid.svg) ![Logic App](./media/logic-app.svg) ![Cognative Services](./media/cognative-services.svg) ![SQL Database](./media/sql-database.svg)
 
 (short, 1-3 sentenced, description of the project)
 
