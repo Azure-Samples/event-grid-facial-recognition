@@ -1,8 +1,8 @@
-# Facial recognition with no code
+# Facial recognition without code
 
-![Blob Storage](./media/blob.svg) ![Event Grid](./media/event-grid.svg) ![Logic App](./media/logic-app.svg) ![Cognative Services](./media/cognative-services.svg) ![SQL Database](./media/sql-database.svg)
+<img src="./media/blob.png" alt="Blob Storage" width="100"/> <img src="./media/right.png" alt="right arrow" width="100"/> <img src="./media/event-grid.svg" alt="Event Grid" width="100"/> <img src="./media/right.png" alt="right arrow" width="100"/> <img src="./media/logic-app.svg" alt="Logic App" width="100"/> <img src="./media/right.png" alt="right arrow" width="100"/> <img src="./media/cognative-services.svg" alt="Cognative Services" width="100"/> <img src="./media/right.png" alt="right arrow" width="100"/> <img src="./media/sql-database.svg" alt="SQL Database" width="100"/>
 
-(short, 1-3 sentenced, description of the project)
+Today, we are going to build an event-driven application to consume photos
 
 ## Features
 
