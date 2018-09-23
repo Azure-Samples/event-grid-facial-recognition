@@ -1,6 +1,6 @@
 # Facial recognition without code
 
-<img src="./media/blob.png" alt="Blob Storage" width="100"/> <img src="./media/right.png" alt="right arrow" width="100"/> <img src="./media/event-grid.svg" alt="Event Grid" width="100"/> <img src="./media/right.png" alt="right arrow" width="100"/> <img src="./media/logic-app.svg" alt="Logic App" width="100"/> <img src="./media/right.png" alt="right arrow" width="100"/> <img src="./media/cognative-services.svg" alt="Cognative Services" width="100"/> <img src="./media/right.png" alt="right arrow" width="100"/> <img src="./media/sql-database.svg" alt="SQL Database" width="100"/>
+<img src="./media/blob.png" alt="Blob Storage" width="70"/> <img src="./media/right.png" alt="right arrow" width="70"/> <img src="./media/event-grid.svg" alt="Event Grid" width="70"/> <img src="./media/right.png" alt="right arrow" width="70"/> <img src="./media/logic-app.svg" alt="Logic App" width="70"/> <img src="./media/right.png" alt="right arrow" width="70"/> <img src="./media/cognative-services.svg" alt="Cognative Services" width="70"/> <img src="./media/right.png" alt="right arrow" width="70"/> <img src="./media/sql-database.svg" alt="SQL Database" width="70"/>
 
 Today, we are going to build an event-driven application to consume photos
 
