@@ -61,13 +61,28 @@ We will upload images to Azure Blob Storage and use its built in events to emit 
 
 1. Create a SQL Database. When you create this, you will be asked to select a SQL Server to run it on. Unless you already have one running that you know you can use, you may create the SQL server directly here in the SQL Database create context. Make sure you note your logon information, you will need it later.
 
-![Create SQL](./media/create-sql.png)
+    ![Create SQL](./media/create-sql.png)
 
-1. 
+1. [Create a table](https://www.w3schools.com/sql/sql_create_table.asp) by navigating to your SQL Database, selecting "Query editor" from the resource menu, logging in, and running the following query.
 
-### Connect everything with Logic Apps and Event 
+    ```sql
+    CREATE TABLE AgeDistribution (
+        ImageId nvarchar,
+        Age decimal,
+    );
+    ```
+
+    Once you have run the query, you may have to refresh the Query editor view of the database to see the newly created table.
+
+    ![Create Table](./media/create-table.png)
+
+### Connect everything with Logic Apps and Event Grid
 
 ![Blob](./media/blob.png) ![Right Arrow](./media/right.png) ![Event Grid](./media/event-grid.png) ![Right Arrow](./media/right.png) ![Logic App](./media/logic-app.png) ![Right Arrow](./media/right.png) ![Cognative Services](./media/cognative-services.png) ![Right Arrow](./media/right.png) ![SQL Database](./media/sql-database.png)
+
+1. Create a Logic App. We will use this and Event Grid to tie everything together.
+
+    ![Create Logic App](./media/create-logic-app.png)
 
 ### Test it out
 
