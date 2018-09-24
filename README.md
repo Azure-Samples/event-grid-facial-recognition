@@ -229,10 +229,31 @@ Congratulations! It may not seem like it yet, but your facial recognition app is
 
 ![Upload](./media/upload.png) ![Right Arrow](./media/right-green.png) ![Blob](./media/blob.png) ![Right Arrow](./media/right-green.png) ![Event Grid](./media/event-grid.png) ![Right Arrow](./media/right-green.png) ![Logic App](./media/logic-app.png) ![Right Arrow](./media/right-green.png) ![Cognitive Services](./media/cognitive-services.png) ![Right Arrow](./media/right-green.png) ![SQL Database](./media/sql-database.png)
 
-## Resources
+Now that we have everything built, lets test it out.
 
-### Documentation
+1. We need to start by uploading a photo. You can either use a selfie (make sure it ends in `.jpg` to match the filter we created in the Event Subscription), or you can use a sample photo provided in the [sample-photos folder of the GitHub repository for this lab](https://github.com/Azure-Samples/event-grid-facial-recognition/tree/master/sample-photos).
 
-### Extending this project
+    * Navigate to the storage account you created at the begining of this lab.
+    * Click on **Storage Explorer**.
+    * Expand **Blob Containers**.
+    * Select the Blob Container you created for this lab.
+    * Select **Uplaod**.
+    * Choose an image containing a face ending in `.jpg` and upload it to the container.
 
-### Related sessions
+    ![Upload Image](upload-image.png)
+
+1. Check your Logic App to make sure everything ran smoothly.
+
+    * Navigate to your Logic App Overview.
+    * Look at the **Runs History** at the bottom of the overview and click on the most recent one. You should see something like this:
+
+    ![Successful Logic App](./media/logic-app-run.png)
+
+1. Check out the image analysis data in your SQL Database.
+
+    * Navigate to your SQL Database and log in to the Query Editor again.
+    * Use the Query editor to check out your data. Try running `select ImageId, Count(*) from AgeDistribution group by ImageId order by 2 asc` to see the count of times each face appeared, or ty running `select Age, Count(*) from AgeDistribution group by age order by 1 asc` to see the count of various age groups appearing in your images.
+
+    ![Run Query](./media/run-query.png)
+
+Congratulations! You've now completed the workshop on runing image analysis for facial recognition with no code (well maybe you wrote a few short lines of JSON and SQL).
