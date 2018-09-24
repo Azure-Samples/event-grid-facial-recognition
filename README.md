@@ -1,6 +1,6 @@
 # Facial recognition without code
 
-![Blob](./media/blob.png) ![Right Arrow](./media/right.png) ![Event Grid](./media/event-grid.png) ![Right Arrow](./media/right.png) ![Logic App](./media/logic-app.png) ![Right Arrow](./media/right.png) ![Cognitive Services](./media/Cognitive-services.png) ![Right Arrow](./media/right.png) ![SQL Database](./media/sql-database.png)
+![Blob](./media/blob.png) ![Right Arrow](./media/right.png) ![Event Grid](./media/event-grid.png) ![Right Arrow](./media/right.png) ![Logic App](./media/logic-app.png) ![Right Arrow](./media/right.png) ![Cognitive Services](./media/cognitive-services.png) ![Right Arrow](./media/right.png) ![SQL Database](./media/sql-database.png)
 
 Today, we are going to build an event-driven application to consume photos, identify the photos by anonomous ID, and store basic data about each in a SQL database. In order to accomplish this, we are going to use the following parts of Azure's Serverless, AI platform, and managed services:
 
@@ -25,7 +25,7 @@ We will upload images to Azure Blob Storage and use its built in events to emit 
 
 ### Setup Storage
 
-![Blob](./media/blob.png) ![Right Arrow](./media/right.png) ![Event Grid](./media/event-grid-grey.png) ![Right Arrow](./media/right.png) ![Logic App](./media/logic-app-grey.png) ![Right Arrow](./media/right.png) ![Cognitive Services](./media/Cognitive-services-grey.png) ![Right Arrow](./media/right.png) ![SQL Database](./media/sql-database-grey.png)
+![Blob](./media/blob.png) ![Right Arrow](./media/right.png) ![Event Grid](./media/event-grid-grey.png) ![Right Arrow](./media/right.png) ![Logic App](./media/logic-app-grey.png) ![Right Arrow](./media/right.png) ![Cognitive Services](./media/cognitive-services-grey.png) ![Right Arrow](./media/right.png) ![SQL Database](./media/sql-database-grey.png)
 
 1. Go to the Azure Portal and provision a Storage Account of Kind `StorageV2 (general purposev2)`.
 
@@ -41,7 +41,7 @@ We will upload images to Azure Blob Storage and use its built in events to emit 
 
 ### Add Cognitive Services Face API
 
-![Blob](./media/blob.png) ![Right Arrow](./media/right.png) ![Event Grid](./media/event-grid-grey.png) ![Right Arrow](./media/right.png) ![Logic App](./media/logic-app-grey.png) ![Right Arrow](./media/right.png) ![Cognitive Services](./media/Cognitive-services.png) ![Right Arrow](./media/right.png) ![SQL Database](./media/sql-database-grey.png)
+![Blob](./media/blob.png) ![Right Arrow](./media/right.png) ![Event Grid](./media/event-grid-grey.png) ![Right Arrow](./media/right.png) ![Logic App](./media/logic-app-grey.png) ![Right Arrow](./media/right.png) ![Cognitive Services](./media/cognitive-services.png) ![Right Arrow](./media/right.png) ![SQL Database](./media/sql-database-grey.png)
 
 1. In the portal, click **Create a resource** and search for `Face` to create a Cognitive Services Face API.
 
@@ -57,7 +57,7 @@ We will upload images to Azure Blob Storage and use its built in events to emit 
 
 ### Setup SQL
 
-![Blob](./media/blob.png) ![Right Arrow](./media/right.png) ![Event Grid](./media/event-grid-grey.png) ![Right Arrow](./media/right.png) ![Logic App](./media/logic-app-grey.png) ![Right Arrow](./media/right.png) ![Cognitive Services](./media/Cognitive-services.png) ![Right Arrow](./media/right.png) ![SQL Database](./media/sql-database.png)
+![Blob](./media/blob.png) ![Right Arrow](./media/right.png) ![Event Grid](./media/event-grid-grey.png) ![Right Arrow](./media/right.png) ![Logic App](./media/logic-app-grey.png) ![Right Arrow](./media/right.png) ![Cognitive Services](./media/cognitive-services.png) ![Right Arrow](./media/right.png) ![SQL Database](./media/sql-database.png)
 
 1. Create a SQL Database. When you create this, you will be asked to select a SQL Server to run it on. Unless you already have one running that you know you can use, you may create the SQL server directly here in the SQL Database create context. Make sure you note your logon information, you will need it later.
 
@@ -78,7 +78,7 @@ We will upload images to Azure Blob Storage and use its built in events to emit 
 
 ### Connect everything with Logic Apps and Event Grid
 
-![Blob](./media/blob.png) ![Right Arrow](./media/right.png) ![Event Grid](./media/event-grid.png) ![Right Arrow](./media/right.png) ![Logic App](./media/logic-app.png) ![Right Arrow](./media/right.png) ![Cognitive Services](./media/Cognitive-services.png) ![Right Arrow](./media/right.png) ![SQL Database](./media/sql-database.png)
+![Blob](./media/blob.png) ![Right Arrow](./media/right.png) ![Event Grid](./media/event-grid.png) ![Right Arrow](./media/right.png) ![Logic App](./media/logic-app.png) ![Right Arrow](./media/right.png) ![Cognitive Services](./media/cognitive-services.png) ![Right Arrow](./media/right.png) ![SQL Database](./media/sql-database.png)
 
 1. Create a Logic App. We will use this and Event Grid to tie everything together.
 
@@ -227,7 +227,7 @@ Congratulations! It may not seem like it yet, but your facial recognition app is
 
 ### Test it out
 
-![Upload](./media/upload.png) ![Right Arrow](./media/right-green.png) ![Blob](./media/blob.png) ![Right Arrow](./media/right-green.png) ![Event Grid](./media/event-grid.png) ![Right Arrow](./media/right-green.png) ![Logic App](./media/logic-app.png) ![Right Arrow](./media/right-green.png) ![Cognitive Services](./media/Cognitive-services.png) ![Right Arrow](./media/right-green.png) ![SQL Database](./media/sql-database.png)
+![Upload](./media/upload.png) ![Right Arrow](./media/right-green.png) ![Blob](./media/blob.png) ![Right Arrow](./media/right-green.png) ![Event Grid](./media/event-grid.png) ![Right Arrow](./media/right-green.png) ![Logic App](./media/logic-app.png) ![Right Arrow](./media/right-green.png) ![Cognitive Services](./media/cognitive-services.png) ![Right Arrow](./media/right-green.png) ![SQL Database](./media/sql-database.png)
 
 ## Resources
 
