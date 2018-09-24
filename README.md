@@ -67,7 +67,7 @@ We will upload images to Azure Blob Storage and use its built in events to emit 
 
     ```sql
     CREATE TABLE AgeDistribution (
-        ImageId nvarchar,
+        ImageId nvarchar(255),
         Age decimal,
     );
     ```
